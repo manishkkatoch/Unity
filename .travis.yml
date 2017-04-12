@@ -4,4 +4,4 @@ os: osx
 osx_image: xcode8
 xcode_sdk: iphoneSimulator10.0
 script:
-- "xcodebuild -workspace Unity/Unity.xcworkspace -scheme Unity -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.3' build test"
+- "xcodebuild -workspace Unity.xcworkspace -scheme Unity -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.3' build test"
