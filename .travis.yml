@@ -3,5 +3,7 @@ podfile: Unity/Podfile
 os: osx
 osx_image: xcode8
 xcode_sdk: iphoneSimulator10.0
+install:
+- "pod install"
 script:
 - "xcodebuild -workspace Unity.xcworkspace -scheme Unity -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.3' build test"
